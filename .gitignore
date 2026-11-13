@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environments and editors
+.venv/
+venv/
+.env
+.vscode/
+.idea/
+.DS_Store
+._*
+
+# Outputs: evaluation results, smoke-test runs, retrained readouts, pseudo-objects
+results/
+pseudo/
+checkpoints/readout_retrained/
+*.log
+slurm-*.out
+
+# Model weights (distributed separately, not through git)
+*.pth
+*.pt
+*.ckpt
+
+# Data: never commit scans or labels
+*.nii
+*.nii.gz
+*.mhd
+*.raw
+*.zip
